@@ -767,7 +767,21 @@ img {
   .places__view-all{
     margin: 25px 0 25px 15px;
   }
-
+  .top__card{
+    grid-column: span 6;
+  }
+  .top__card-pic {
+    margin-bottom: 10px;
+  }
+  .top__card-info {
+    margin-bottom: 25px;
+  }
+  .top__see-more-button{
+    display: block;
+    width: 70%;
+    text-align: center;
+    margin: 0 auto;
+  }
 }
 
 /* Media end */
