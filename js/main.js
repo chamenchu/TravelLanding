@@ -18,15 +18,18 @@
   burgerItem.addEventListener("click", () => {
     menu.classList.add("header__nav_active");
   });
-  const itemLinks = document.querySelectorAll(".js-scroll");
-  itemLinks.forEach(each => {
-      each.addEventListener('click', () => {
-          menu.classList.remove("header__nav_active");
-      })
-  })
+  const itemLinks = document.querySelectorAll(".header__link");
+
   closeButton.addEventListener("click", () => {
     menu.classList.remove("header__nav_active");
   });
+  if(window.innerWidth < 768){
+    itemLinks.forEach(each => {
+        each.addEventListener('click', () => {
+            menu.classList.remove("header__nav_active");
+        })
+    })
+  }
 })();
 
 // Scroll to anchors

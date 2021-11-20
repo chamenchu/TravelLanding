@@ -852,7 +852,7 @@ img {
     padding: 0;
   }
   .tour__pic {
-    -ms-grid-row: 1;
+    grid-row: 1;
         grid-row-start: 1;
     width: 100%;
   }
